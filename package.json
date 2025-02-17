@@ -5,11 +5,10 @@
   "homepage": "https://ettenger.github.io/band-quiz",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "next build && next export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@emotion/styled": "^11.14.0",
